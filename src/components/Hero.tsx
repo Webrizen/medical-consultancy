@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Briefcase, Stethoscope, Cpu } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,22 +7,28 @@ const Hero: React.FC = () => {
 
   const slides = [
     {
-      title: "Your Gateway to",
-      highlight: "Medical Excellence",
-      subtitle: "Expert guidance for MBBS admissions in top medical colleges",
-      image: "https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      title: "Shape Your Future in",
+      highlight: "Engineering",
+      subtitle: "Get into top engineering colleges with our expert guidance",
+      icon: <Cpu className="w-12 h-12 text-white" />,
+      image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80",
+      cta: "Explore Engineering Programs"
     },
     {
-      title: "Transform Your",
-      highlight: "Medical Dreams",
-      subtitle: "Personalized consultation for international medical education",
-      image: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      title: "Begin Your Journey in",
+      highlight: "Medical",
+      subtitle: "Comprehensive support for MBBS and medical admissions",
+      icon: <Stethoscope className="w-12 h-12 text-white" />,
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80",
+      cta: "Start Medical Admission"
     },
     {
-      title: "Excellence in",
-      highlight: "Medical Guidance",
-      subtitle: "Join thousands of successful medical students worldwide",
-      image: "https://images.pexels.com/photos/4167669/pexels-photo-4167669.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      title: "Accelerate Your Career with",
+      highlight: "MBA",
+      subtitle: "Get into premier business schools with our strategic counseling",
+      icon: <Briefcase className="w-12 h-12 text-white" />,
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80",
+      cta: "Discover MBA Options"
     }
   ];
 
@@ -50,14 +56,15 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-700/20 to-transparent z-10"></div>
+      {/* Dark overlay for better text contrast */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
       
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={slides[currentSlide].image}
-          alt="Medical Education"
-          className="w-full h-full object-cover transition-all duration-1000 filter grayscale"
+          alt={slides[currentSlide].highlight}
+          className="w-full h-full object-cover transition-all duration-1000"
         />
       </div>
 
@@ -66,7 +73,14 @@ const Hero: React.FC = () => {
         <div className={`transition-all duration-700 transform ${
           animateText ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6">
+          {/* Domain Icon */}
+          <div className="mb-6 flex justify-center">
+            <div className="bg-blue-600/90 p-4 rounded-full backdrop-blur-sm">
+              {slides[currentSlide].icon}
+            </div>
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             <span className="block text-white">{slides[currentSlide].title}</span>
             <span className="block text-white relative">
               {slides[currentSlide].highlight}
@@ -78,17 +92,17 @@ const Hero: React.FC = () => {
             {slides[currentSlide].subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group bg-white text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-blue-700 hover:text-white cursor-hover transform hover:scale-105">
-              Start Your Journey
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button className="group bg-white text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-blue-700 hover:text-white transform hover:scale-105 shadow-lg">
+              {slides[currentSlide].cta}
               <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
             </button>
             
-            <button className="group flex items-center space-x-3 text-white hover:text-gray-300 transition-colors duration-300 cursor-hover">
+            <button className="group flex items-center space-x-3 text-white hover:text-gray-200 transition-colors duration-300">
               <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-blue-700 transition-all duration-300">
                 <Play className="w-5 h-5 ml-1" />
               </div>
-              <span className="font-medium">Watch Success Stories</span>
+              <span className="font-medium">Watch Student Stories</span>
             </button>
           </div>
         </div>
@@ -97,14 +111,16 @@ const Hero: React.FC = () => {
       {/* Navigation */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300 cursor-hover"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300"
+        aria-label="Previous slide"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300 cursor-hover"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300"
+        aria-label="Next slide"
       >
         <ChevronRight className="w-5 h-5" />
       </button>
@@ -115,9 +131,10 @@ const Hero: React.FC = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 cursor-hover ${
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentSlide ? 'bg-white' : 'bg-white/30'
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
