@@ -8,7 +8,7 @@ const Statistics: React.FC = () => {
     { number: 2500, label: "Students Guided", suffix: "+" },
     { number: 15, label: "Years Experienced professionals", suffix: "" },
     { number: 98, label: "Success Rate", suffix: "%" },
-    { number: 3, label: "First Consultancy Free", suffix: "." }
+    { number: 1, label: "Consultancy Free", suffix: "st" }
   ];
 
   useEffect(() => {
