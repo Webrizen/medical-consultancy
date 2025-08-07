@@ -22,7 +22,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
     // Create form data for formsubmit.io
     const form = document.createElement('form');
     form.method = 'POST';
-    form.action = 'https://formsubmit.co/info@medpathconsultancy.com';
+    form.action = 'https://formsubmit.co/info@just2admit.com';
     form.style.display = 'none';
 
     // Add form fields
@@ -44,7 +44,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
     const subjectInput = document.createElement('input');
     subjectInput.type = 'hidden';
     subjectInput.name = '_subject';
-    subjectInput.value = 'New Student Inquiry - MedPath Consultancy';
+    subjectInput.value = 'New Student Inquiry - just2admit';
     form.appendChild(subjectInput);
 
     document.body.appendChild(form);
