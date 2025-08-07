@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -15,7 +15,8 @@ const Footer: React.FC = () => {
             <span className="text-2xl font-bold tracking-tight uppercase">Just 2 Admit</span>
           </div>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Your trusted partner in medical education. We guide aspiring doctors to achieve their dreams through expert consultation and support.
+              We help you navigate the complex admission process with ease and confidence. 
+              Our expert team is dedicated to guiding you every step of the way, ensuring you find the right path to your dream university.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (

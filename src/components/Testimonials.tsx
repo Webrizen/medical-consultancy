@@ -5,77 +5,77 @@ const Testimonials: React.FC = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [activeDomain, setActiveDomain] = useState<'medical' | 'engineering' | 'mba'>('medical');
 
-  const testimonials = {
-    medical: [
-      {
-        name: "Dr. Priya Sharma",
-        role: "MBBS Graduate - AIIMS Delhi",
-        image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "just2admit's guidance helped me secure admission at AIIMS Delhi. Their expertise in medical college admissions is unparalleled in India.",
-        rating: 5
-      },
-      {
-        name: "Rahul Patel",
-        role: "MBBS Student - KGMU Lucknow",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "From NEET preparation to college selection, just2admit supported me at every step. Today I'm pursuing my dream at KGMU.",
-        rating: 5
-      },
-      {
-        name: "Dr. Ananya Reddy",
-        role: "MD Radiology - PGIMER Chandigarh",
-        image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "Their post-graduation counseling helped me secure MD Radiology at PGIMER. Truly the best medical admission consultants in India.",
-        rating: 5
-      }
-    ],
-    engineering: [
-      {
-        name: "Arjun Mehta",
-        role: "B.Tech CSE - IIT Bombay",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "just2admit's JEE counseling helped me crack IIT Bombay with a great rank. Their engineering admission strategies are spot-on!",
-        rating: 5
-      },
-      {
-        name: "Neha Gupta",
-        role: "M.Tech AI - IISc Bangalore",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "Thanks to just2admit, I got into IISc Bangalore for M.Tech in AI. Their GATE counseling made all the difference.",
-        rating: 5
-      },
-      {
-        name: "Vikram Joshi",
-        role: "B.Tech Mechanical - NIT Trichy",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "Their NIT admission guidance helped me choose the perfect branch at NIT Trichy. Excellent engineering counseling services!",
-        rating: 5
-      }
-    ],
-    mba: [
-      {
-        name: "Aditya Malhotra",
-        role: "MBA - IIM Ahmedabad",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "just2admit's CAT preparation and interview guidance got me into IIM Ahmedabad. Best MBA consultants in India!",
-        rating: 5
-      },
-      {
-        name: "Priyanka Choudhary",
-        role: "PGDM - XLRI Jamshedpur",
-        image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "Their XAT counseling helped me secure admission at XLRI. The GD/PI preparation was exceptionally thorough.",
-        rating: 5
-      },
-      {
-        name: "Rohan Kapoor",
-        role: "Executive MBA - ISB Hyderabad",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        text: "just2admit's guidance was crucial for my ISB admission. Their MBA consultants understand what top B-schools look for.",
-        rating: 5
-      }
-    ]
-  };
+const testimonials = {
+  medical: [
+    {
+      name: "Dr. Priya Sharma",
+      role: "MBBS Graduate - Reputed Medical College, Delhi",
+      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "just2admit helped me secure admission in a good medical college with their NEET counseling. Their guidance made the complex admission process much simpler.",
+      rating: 5
+    },
+    {
+      name: "Rahul Patel",
+      role: "MBBS Student - Private Medical College, UP",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "From application to admission, just2admit supported me at every step. I got into a decent college despite average NEET score.",
+      rating: 5
+    },
+    {
+      name: "Dr. Ananya Reddy",
+      role: "MD Student - State Medical College, Punjab",
+      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "Their counseling helped me choose the right specialization and college for my post-graduation. Very practical advice!",
+      rating: 5
+    }
+  ],
+  engineering: [
+    {
+      name: "Arjun Mehta",
+      role: "B.Tech CSE - State Engineering College, Mumbai",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "just2admit helped me get into a good engineering college with reasonable fees. Their JEE Main counseling was very helpful.",
+      rating: 5
+    },
+    {
+      name: "Neha Gupta",
+      role: "M.Tech - Private University, Bangalore",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "Got admission in a decent university for M.Tech with good placement record. Their GATE score analysis was spot on!",
+      rating: 5
+    },
+    {
+      name: "Vikram Joshi",
+      role: "B.Tech Mechanical - Autonomous College, MP",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "Their guidance helped me choose between multiple colleges. Got into a good mechanical program with scholarship.",
+      rating: 5
+    }
+  ],
+  mba: [
+    {
+      name: "Aditya Malhotra",
+      role: "MBA - Reputed B-School, Gujarat",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "just2admit helped me get into a good B-school despite average CAT score. Their college shortlisting was perfect for my profile.",
+      rating: 5
+    },
+    {
+      name: "Priyanka Choudhary",
+      role: "PGDM - Private Business School, Rajasthan",
+      image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "Their GD/PI preparation helped me crack interviews at multiple colleges. Chose one with best ROI.",
+      rating: 5
+    },
+    {
+      name: "Rohan Kapoor",
+      role: "Executive MBA - University Program, Hyderabad",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+      text: "Found a good weekend MBA program that fit my work schedule. just2admit understood my requirements perfectly.",
+      rating: 5
+    }
+  ]
+};
 
   useEffect(() => {
     const timer = setInterval(() => {
