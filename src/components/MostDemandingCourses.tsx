@@ -11,7 +11,6 @@ const MostDemandingCourses: React.FC = () => {
         { name: 'Artificial Intelligence & ML', icon: BrainCircuit, description: 'Master AI algorithms and machine learning models' },
         { name: 'Computer Science Core', icon: Laptop, description: 'Fundamentals of programming and software development' },
         { name: 'Cyber Security', icon: Shield, description: 'Protect systems and networks from digital attacks' },
-        { name: 'Cloud Computing', icon: Cloud, description: 'Design and manage cloud infrastructure solutions' },
         { name: 'Electronics & Electrical', icon: CircuitBoard, description: 'Circuit design and electrical systems engineering' }
       ]
     },
@@ -24,7 +23,6 @@ const MostDemandingCourses: React.FC = () => {
         { name: 'BDS', icon: BookHeart, description: 'Dental surgery and oral health specialization' },
         { name: 'Nursing', icon: BookHeart, description: 'Patient care and medical assistance programs' },
         { name: 'Pharmacy', icon: BookHeart, description: 'Medicinal chemistry and drug development' },
-        { name: 'Physiotherapy', icon: BookHeart, description: 'Rehabilitation and physical therapy training' }
       ]
     },
     {
@@ -35,7 +33,6 @@ const MostDemandingCourses: React.FC = () => {
         { name: 'Finance', icon: DollarSign, description: 'Corporate finance and investment strategies' },
         { name: 'Marketing', icon: BarChart, description: 'Brand management and digital marketing' },
         { name: 'Human Resources', icon: Users, description: 'Talent management and organizational behavior' },
-        { name: 'Operations', icon: BarChart, description: 'Supply chain and business process management' },
         { name: 'Entrepreneurship', icon: Briefcase, description: 'Startup development and business innovation' }
       ]
     }
