@@ -8,12 +8,12 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <Stethoscope className="w-5 h-5 text-blue-700" />
-              </div>
-              <span className="text-2xl font-bold">just2admit</span>
+            <div className="flex items-start justify-start space-x-3 cursor-hover">
+            <div className="w-10 h-10 rounded-full flex items-center justify-center">
+              <img src="/favicon.svg"  alt="Just2Admit" className="w-full h-full" />
             </div>
+            <span className="text-2xl font-bold tracking-tight">Just2Admit</span>
+          </div>
             <p className="text-gray-300 leading-relaxed mb-6">
               Your trusted partner in medical education. We guide aspiring doctors to achieve their dreams through expert consultation and support.
             </p>

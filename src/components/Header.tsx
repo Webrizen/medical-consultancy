@@ -19,9 +19,9 @@ const Header: React.FC = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3 cursor-hover">
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-              <Stethoscope className="w-5 h-5 text-white" />
+          <div className="flex items-center justify-center space-x-3 cursor-hover">
+            <div className="w-10 h-10 rounded-full flex items-center justify-center">
+              <img src="/favicon.svg"  alt="Just2Admit" className="w-full h-full" />
             </div>
             <span className="text-2xl font-bold tracking-tight">Just2Admit</span>
           </div>
