@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Users, Globe, Award, BookOpen, HeartHandshake } from 'lucide-react';
+import { GraduationCap, Users, Globe, Award, BookOpen, HeartHandshake, School, Gauge, UserCog, ShieldCheck, BarChart2 } from 'lucide-react';
 
 const Services: React.FC = () => {
   const services = [
@@ -32,6 +32,31 @@ const Services: React.FC = () => {
       icon: HeartHandshake,
       title: "Post-Admission Support",
       description: "Continuous support throughout your medical education journey"
+    },
+    {
+      icon: School,
+      title: "University Selection",
+      description: "Personalized recommendations for the best universities matching your profile"
+    },
+    {
+      icon: Gauge,
+      title: "College Predictor",
+      description: "Advanced tools to predict your chances of admission in various colleges"
+    },
+    {
+      icon: UserCog,
+      title: "Expert Counsellors",
+      description: "Access to experienced counselors with deep knowledge of medical education"
+    },
+    {
+      icon: ShieldCheck,
+      title: "Transparent Process",
+      description: "Clear and honest guidance with no hidden processes or fees"
+    },
+    {
+      icon: BarChart2,
+      title: "College Level Analysis",
+      description: "Detailed analysis of colleges including infrastructure, faculty, and placements"
     }
   ];
 
@@ -69,9 +94,9 @@ const Services: React.FC = () => {
               </p>
 
               <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="text-blue-700 font-semibold hover:underline">
+                <a href='/#contact' className="text-blue-700 font-semibold hover:underline">
                   Learn More →
-                </button>
+                </a>
               </div>
             </div>
           ))}
