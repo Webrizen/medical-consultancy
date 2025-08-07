@@ -31,9 +31,9 @@ const ContactButtons: React.FC = () => {
       
       <a
         href="tel:+919876543210"
-        className="group w-14 h-14 bg-black rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 cursor-hover"
+        className="group w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 cursor-hover"
       >
-        <Phone className="w-6 h-6 text-white" />
+        <Phone className="w-7 h-7 text-white" />
         <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-black text-white px-3 py-2 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
           Call Now
         </div>
