@@ -61,13 +61,13 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
                 <p className="text-gray-300">
-                  123 Medical Plaza, Healthcare District,<br />
-                  Mumbai, India 400001
+                 3rd floor, verma center, Patna,<br />
+                 Bihar, India, 800001
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gray-400" />
-                <p className="text-gray-300">+91 98765 43210</p>
+                <p className="text-gray-300">+91 8002800219</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-400" />
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 MedPath Consultancy. All rights reserved.
+              © {new Date().getFullYear()} MedPath Consultancy. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">
