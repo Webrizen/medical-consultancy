@@ -1,5 +1,6 @@
 import React from 'react';
 import { Stethoscope, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -45,9 +46,12 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Services</h3>
             <ul className="space-y-3">
-              {['MBBS Admission', 'Career Counseling', 'University Selection', 'Visa Assistance', 'Documentation', 'Scholarship Help'].map((service) => (
+             {['MBBS Admission', 'Career Counseling', 'University Selection', 'Visa Assistance', 'Documentation', 'Scholarship Help'].map((service) => (
                 <li key={service}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 cursor-hover">
+                  <a
+                    href={`https://wa.me/918002800219?text=I'm%20interested%20in%20${encodeURIComponent(service)}`}
+                    className="text-gray-300 hover:text-white transition-colors duration-300 cursor-hover"
+                  >
                     {service}
                   </a>
                 </li>
@@ -83,12 +87,12 @@ const Footer: React.FC = () => {
               © {new Date().getFullYear()} MedPath Consultancy. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">
+               <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">
+              </Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

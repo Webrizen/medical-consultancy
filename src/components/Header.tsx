@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             {['Home', 'Services', 'About', 'Success Stories', 'Contact'].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase().replace(' ', '-')}`}
+                href={`/#${item.toLowerCase().replace(' ', '-')}`}
                 className="relative text-sm font-medium tracking-wide hover:text-gray-600 transition-colors duration-300 cursor-hover group"
               >
                 {item}
