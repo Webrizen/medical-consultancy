@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
       setAnimateText(false);
       setTimeout(() => setAnimateText(true), 100);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(timer);
   }, []);
 

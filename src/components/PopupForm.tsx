@@ -109,7 +109,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl max-w-lg w-full p-6 transform animate-scale-in">
+      <div className="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] flex flex-col transform animate-scale-in px-4 py-6">
         {/* Close Button & Header */}
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-2xl font-bold text-blue-900">Get Expert Guidance</h3>
@@ -137,7 +137,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
               key={id}
               type="button"
               onClick={() => setActiveTab(id as any)}
-              className={`flex-1 py-2 md:px-0 px-4 md:mx-0 mx-1 text-center font-medium text-sm transition-colors flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2 md:px-0 px-4 md:mx-0 mx-1 text-center font-medium md:text-sm text-xs transition-colors flex items-center justify-center gap-2 ${
                 activeTab === id
                   ? 'text-white bg-blue-600 rounded-t-lg'
                   : 'text-blue-800 hover:bg-blue-50'
@@ -150,6 +150,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
         </div>
 
         {/* Form */}
+        <div className="overflow-y-auto p-6 flex-1 no-scrollbar" style={{ maxHeight: 'calc(90vh - 160px)' }}>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name */}
           <div className="relative">
@@ -334,6 +335,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
             Get {activeTab === 'medical' ? 'Medical' : activeTab === 'engineering' ? 'Engineering' : 'MBA'} Guidance
           </button>
         </form>
+        </div>
 
         <p className="text-xs text-blue-500 text-center mt-4">
           We respect your privacy. Your information is secure with us.
