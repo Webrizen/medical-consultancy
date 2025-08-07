@@ -21,13 +21,13 @@ const Home = ({ onPredictorClick }: { onPredictorClick: () => void }) => (
   <>
     <Hero />
     <MostDemandingCourses />
+    <Predictor onPredictorClick={onPredictorClick} />
     <Services />
     <Colleges />
     <TopEngineeringColleges />
-    <TopMBAColleges />   
+    <TopMBAColleges />
     <Statistics />
     <Testimonials />
-    <Predictor onPredictorClick={onPredictorClick} />
     <ContactForm />
     <ContactButtons />
   </>
