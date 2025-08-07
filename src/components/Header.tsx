@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <div className="w-10 h-10 rounded-full flex items-center justify-center">
               <img src="/favicon.svg"  alt="Just2Admit" className="w-full h-full" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">Just2Admit</span>
+            <span className="text-2xl font-bold tracking-tight uppercase">Just 2 Admit</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">

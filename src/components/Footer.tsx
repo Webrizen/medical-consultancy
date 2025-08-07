@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <div className="w-10 h-10 rounded-full flex items-center justify-center">
               <img src="/favicon.svg"  alt="Just2Admit" className="w-full h-full" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">Just2Admit</span>
+            <span className="text-2xl font-bold tracking-tight uppercase">Just 2 Admit</span>
           </div>
             <p className="text-gray-300 leading-relaxed mb-6">
               Your trusted partner in medical education. We guide aspiring doctors to achieve their dreams through expert consultation and support.
