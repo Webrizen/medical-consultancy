@@ -13,11 +13,17 @@ import ContactButtons from './components/ContactButtons';
 import PopupForm from './components/PopupForm';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import MostDemandingCourses from './components/MostDemandingCourses';
+import TopEngineeringColleges from './components/TopEngineeringColleges';
+import TopMBAColleges from './components/TopMBAColleges';
 
 const Home = ({ onPredictorClick }: { onPredictorClick: () => void }) => (
   <>
     <Hero />
+    <MostDemandingCourses />
     <Colleges />
+    <TopEngineeringColleges />
+    <TopMBAColleges />
     <Services />
     <Statistics />
     <Testimonials />

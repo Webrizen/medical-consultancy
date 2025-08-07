@@ -5,7 +5,7 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: GraduationCap,
-      title: "MBBS Admission Guidance",
+      title: "Admission Guidance",
       description: "Expert counseling for medical college admissions with personalized approach"
     },
     {
@@ -64,9 +64,6 @@ const Services: React.FC = () => {
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed md:block hidden">
-                {service.description}
-              </p>
 
               <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a href='/#contact' className="text-blue-700 font-semibold hover:underline">
