@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
               <Stethoscope className="w-5 h-5 text-white" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">just2admit</span>
+            <span className="text-2xl font-bold tracking-tight">Just2Admit</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">

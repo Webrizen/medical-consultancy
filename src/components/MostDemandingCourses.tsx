@@ -84,7 +84,6 @@ const MostDemandingCourses: React.FC = () => {
                       <course.icon className="w-5 h-5 text-blue-600" />
                     </div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">{course.name}</h4>
-                    <p className="text-gray-600 text-sm">{course.description}</p>
                   </div>
                 ))}
               </div>
