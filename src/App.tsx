@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -7,7 +7,6 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import ContactButtons from './components/ContactButtons';
 import PopupForm from './components/PopupForm';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   useEffect(() => {
@@ -37,7 +36,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-black font-bricolage overflow-x-hidden">
-      <CustomCursor />
       <Header />
       <Hero />
       <Services />
