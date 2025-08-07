@@ -47,8 +47,8 @@ const MostDemandingCourses: React.FC = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our <span className="relative inline-block">
-              Academic Programs
+            Our Most {" "}<span className="relative inline-block">
+              Demanding Courses
               <div className="absolute -bottom-1 left-0 w-full h-1 bg-blue-500/30 rounded-full"></div>
               <div className="absolute -bottom-1 left-0 w-1/3 h-1 bg-blue-600 rounded-full"></div>
             </span>

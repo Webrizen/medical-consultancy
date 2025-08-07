@@ -15,7 +15,7 @@ const Colleges: React.FC = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-900">
             Top <span className="relative inline-block">
-              Private Medical collages in India
+              Private Medical colleges in India
               <div className="absolute -bottom-1 left-0 w-full h-1 bg-blue-500/30 rounded-full"></div>
               <div className="absolute -bottom-1 left-0 w-1/3 h-1 bg-blue-600 rounded-full"></div>
             </span>
