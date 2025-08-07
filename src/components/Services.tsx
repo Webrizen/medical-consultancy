@@ -49,7 +49,7 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed md:block hidden">
                 {service.description}
               </p>
 
