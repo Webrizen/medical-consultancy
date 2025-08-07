@@ -5,10 +5,10 @@ const Statistics: React.FC = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const stats = [
-    { number: 2500, label: "Students Placed", suffix: "+" },
-    { number: 15, label: "Years Experience", suffix: "" },
+    { number: 2500, label: "Students Guided", suffix: "+" },
+    { number: 15, label: "Years Experienced professionals", suffix: "" },
     { number: 98, label: "Success Rate", suffix: "%" },
-    { number: 45, label: "Partner Universities", suffix: "+" }
+    { number: 3, label: "First Consultancy Free", suffix: "." }
   ];
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Statistics: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light">
-            Numbers that speak for our commitment to excellence in medical education guidance
+            Discover the milestones we've achieved in empowering students and shaping futures through our dedicated services and students.
           </p>
         </div>
 

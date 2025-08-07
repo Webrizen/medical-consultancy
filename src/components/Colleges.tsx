@@ -2,10 +2,10 @@ import React from 'react';
 
 const Colleges: React.FC = () => {
   const colleges = [
-    { name: 'Harvard Medical School', logo: '🏛️' },
-    { name: 'Johns Hopkins University', logo: '🏥' },
-    { name: 'Stanford University', logo: '🌉' },
-    { name: 'University of Cambridge', logo: '🎓' },
+    { name: 'IQ City Medical College', logo: '🏛️' },
+    { name: 'GDMIS', logo: '🏥' },
+    { name: 'Sanaka Medical College', logo: '🌉' },
+    { name: 'KPC Medical College', logo: '🎓' },
   ];
 
   return (

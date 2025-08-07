@@ -20,17 +20,17 @@ const Services: React.FC = () => {
     },
     {
       icon: UserCog,
-      title: "Expert Counsellors",
+      title: "Expert Counselors",
       description: "Access to experienced counselors with deep knowledge of medical education"
     },
     {
       icon: ShieldCheck,
-      title: "Transparent Process",
+      title: "Career Guidance",
       description: "Clear and honest guidance with no hidden processes or fees"
     },
     {
       icon: BarChart2,
-      title: "College Level Analysis",
+      title: "College Evaluation",
       description: "Detailed analysis of colleges including infrastructure, faculty, and placements"
     }
   ];

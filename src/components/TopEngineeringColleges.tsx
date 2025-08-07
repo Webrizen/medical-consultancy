@@ -2,10 +2,10 @@ import React from 'react';
 
 const TopEngineeringColleges: React.FC = () => {
   const colleges = [
-    { name: 'IIT Bombay', logo: '🎓' },
-    { name: 'IIT Delhi', logo: '🏛️' },
-    { name: 'IIT Madras', logo: '🏫' },
-    { name: 'IIT Kanpur', logo: '🏢' },
+    { name: 'RB College of Engineering', logo: '🎓' },
+    { name: 'BMS College of Engineering', logo: '🏛️' },
+    { name: 'MS Ramaiah Institute of Technology', logo: '🏫' },
+    { name: 'SRM Institute of Science and Technology', logo: '🏢' },
   ];
 
   return (

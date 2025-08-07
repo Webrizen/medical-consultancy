@@ -69,17 +69,6 @@ const Predictor: React.FC<PredictorProps> = ({ onPredictorClick }) => {
             </div>
           ))}
         </div>
-
-        {/* Additional CTA */}
-        <div className="text-center mt-16 animate-fade-in">
-          <p className="text-gray-500 mb-4">Not sure which predictor to use?</p>
-          <button 
-            onClick={onPredictorClick}
-            className="px-8 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-50 transition-colors shadow-md hover:shadow-lg border border-gray-200"
-          >
-            Get Personalized Guidance
-          </button>
-        </div>
       </div>
     </section>
   );

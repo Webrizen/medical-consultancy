@@ -2,10 +2,10 @@ import React from 'react';
 
 const TopMBAColleges: React.FC = () => {
   const colleges = [
-    { name: 'IIM Ahmedabad', logo: '📈' },
-    { name: 'IIM Bangalore', logo: '📉' },
-    { name: 'IIM Calcutta', logo: '📊' },
-    { name: 'ISB Hyderabad', logo: '🏢' },
+    { name: 'symbiosis institute of business management', logo: '📈' },
+    { name: 'Institute of Management Technology, Ghaziabad', logo: '📉' },
+    { name: 'jamnalal bajaj institute of management studies', logo: '📊' },
+    { name: 'birla institute of management technology', logo: '🏢' },
   ];
 
   return (

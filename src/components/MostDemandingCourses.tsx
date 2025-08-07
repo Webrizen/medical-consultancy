@@ -23,8 +23,8 @@ const MostDemandingCourses: React.FC = () => {
       courses: [
         { name: 'MBBS', icon: BookHeart },
         { name: 'BDS', icon: BookHeart },
-        { name: 'Nursing', icon: BookHeart },
-        { name: 'Pharmacy', icon: BookHeart },
+        { name: 'BAMS', icon: BookHeart },
+        { name: 'BHMS', icon: BookHeart },
       ]
     },
     {
@@ -35,7 +35,7 @@ const MostDemandingCourses: React.FC = () => {
         { name: 'Finance', icon: DollarSign },
         { name: 'Marketing', icon: BarChart },
         { name: 'Human Resources', icon: Users },
-        { name: 'Entrepreneurship', icon: Briefcase }
+        { name: 'Data Analytics', icon: Briefcase }
       ]
     }
   ];
