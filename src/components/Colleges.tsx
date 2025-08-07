@@ -21,7 +21,7 @@ const Colleges: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-blue-800/90 max-w-3xl mx-auto font-light leading-relaxed">
-            We are proud to collaborate with world-renowned medical institutions to provide exceptional educational opportunities.
+            Discover the leading private medical colleges in India, renowned for their excellence in medical education and research. Explore our curated list of top institutions that shape the future of healthcare professionals.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Colleges: React.FC = () => {
         {/* CTA at bottom */}
         <div className="text-center mt-16 animate-fade-in">
           <a href='/#contact' className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
-            View All Partners
+            View All Collages
           </a>
         </div>
       </div>
