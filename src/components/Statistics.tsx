@@ -49,7 +49,7 @@ const Statistics: React.FC = () => {
   }, [hasAnimated]);
 
   return (
-    <section id="statistics-section" className="py-20 bg-black text-white">
+    <section id="statistics-section" className="py-20 bg-blue-700 text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

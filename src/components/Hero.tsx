@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-700/20 to-transparent z-10"></div>
       
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -79,13 +79,13 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group bg-white text-black px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-black hover:text-white cursor-hover transform hover:scale-105">
+            <button className="group bg-white text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-blue-700 hover:text-white cursor-hover transform hover:scale-105">
               Start Your Journey
               <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
             </button>
             
             <button className="group flex items-center space-x-3 text-white hover:text-gray-300 transition-colors duration-300 cursor-hover">
-              <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300">
+              <div className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-blue-700 transition-all duration-300">
                 <Play className="w-5 h-5 ml-1" />
               </div>
               <span className="font-medium">Watch Success Stories</span>
@@ -97,14 +97,14 @@ const Hero: React.FC = () => {
       {/* Navigation */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-hover"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300 cursor-hover"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-hover"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-700 transition-all duration-300 cursor-hover"
       >
         <ChevronRight className="w-5 h-5" />
       </button>

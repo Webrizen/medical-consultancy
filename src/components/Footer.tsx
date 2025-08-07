@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-black text-white py-16">
+    <footer id="contact" className="bg-blue-700 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <Stethoscope className="w-5 h-5 text-black" />
+                <Stethoscope className="w-5 h-5 text-blue-700" />
               </div>
               <span className="text-2xl font-bold">MedPath</span>
             </div>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 cursor-hover"
+                  className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-white hover:text-blue-700 transition-all duration-300 cursor-hover"
                 >
                   <Icon className="w-5 h-5" />
                 </a>

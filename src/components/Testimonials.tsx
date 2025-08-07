@@ -41,7 +41,7 @@ const Testimonials: React.FC = () => {
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Success <span className="relative">Stories
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-black"></div>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-700"></div>
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
                 
                 <div className="flex justify-center mb-4">
                   {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-black fill-current" />
+                    <Star key={i} className="w-5 h-5 text-blue-700 fill-current" />
                   ))}
                 </div>
                 
@@ -72,7 +72,7 @@ const Testimonials: React.FC = () => {
                 </blockquote>
                 
                 <div>
-                  <h4 className="text-lg font-bold text-black">
+                  <h4 className="text-lg font-bold text-blue-700">
                     {testimonials[currentTestimonial].name}
                   </h4>
                   <p className="text-gray-600">
@@ -89,7 +89,7 @@ const Testimonials: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 cursor-hover ${
-                  index === currentTestimonial ? 'bg-black' : 'bg-gray-300'
+                  index === currentTestimonial ? 'bg-blue-700' : 'bg-gray-300'
                 }`}
               />
             ))}

@@ -41,7 +41,7 @@ const Services: React.FC = () => {
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our <span className="relative">Services
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-black"></div>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-700"></div>
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
               className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-hover animate-on-scroll"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors duration-300">
+              <div className="w-16 h-16 bg-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors duration-300">
                 <service.icon className="w-8 h-8 text-white" />
               </div>
               
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
               </p>
 
               <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="text-black font-semibold hover:underline">
+                <button className="text-blue-700 font-semibold hover:underline">
                   Learn More →
                 </button>
               </div>
