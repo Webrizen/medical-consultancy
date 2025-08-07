@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <Stethoscope className="w-5 h-5 text-blue-700" />
               </div>
-              <span className="text-2xl font-bold">MedPath</span>
+              <span className="text-2xl font-bold">just2admit</span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
               Your trusted partner in medical education. We guide aspiring doctors to achieve their dreams through expert consultation and support.
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-400" />
-                <p className="text-gray-300">info@medpathconsultancy.com</p>
+                <p className="text-gray-300">info@just2admit.com</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} MedPath Consultancy. All rights reserved.
+              © {new Date().getFullYear()} just2admit. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
                <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-hover">

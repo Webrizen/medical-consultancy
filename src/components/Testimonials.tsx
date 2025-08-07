@@ -9,7 +9,7 @@ const Testimonials: React.FC = () => {
       name: "Dr. Priya Sharma",
       role: "MBBS Graduate - Ukraine",
       image: "https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=300",
-      text: "MedPath made my dream of becoming a doctor come true. Their guidance was exceptional throughout my MBBS journey in Ukraine.",
+      text: "just2admit made my dream of becoming a doctor come true. Their guidance was exceptional throughout my MBBS journey in Ukraine.",
       rating: 5
     },
     {
@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
       name: "Dr. Sneha Reddy",
       role: "MBBS Graduate - Russia",
       image: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=300",
-      text: "Thanks to MedPath, I'm now practicing medicine. Their expertise in international admissions is unmatched.",
+      text: "Thanks to just2admit, I'm now practicing medicine. Their expertise in international admissions is unmatched.",
       rating: 5
     }
   ];
