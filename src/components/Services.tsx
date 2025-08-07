@@ -9,31 +9,6 @@ const Services: React.FC = () => {
       description: "Expert counseling for medical college admissions with personalized approach"
     },
     {
-      icon: Globe,
-      title: "International Universities",
-      description: "Access to top medical universities across Russia, Ukraine, Georgia & more"
-    },
-    {
-      icon: BookOpen,
-      title: "Documentation Support",
-      description: "Complete assistance with application forms, visa processing & legal formalities"
-    },
-    {
-      icon: Users,
-      title: "Career Counseling",
-      description: "Professional guidance to choose the right medical specialization path"
-    },
-    {
-      icon: Award,
-      title: "Scholarship Assistance",
-      description: "Help securing merit-based scholarships and financial aid options"
-    },
-    {
-      icon: HeartHandshake,
-      title: "Post-Admission Support",
-      description: "Continuous support throughout your medical education journey"
-    },
-    {
       icon: School,
       title: "University Selection",
       description: "Personalized recommendations for the best universities matching your profile"
