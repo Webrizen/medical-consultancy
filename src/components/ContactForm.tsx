@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
 
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
             {/* Tab Navigation */}
-            <div className="flex border-b border-gray-200">
+            <div className="flex border-b border-gray-200 overflow-y-auto no-scrollbar">
               <button
                 onClick={() => setActiveTab('medical')}
                 className={`flex-1 py-4 px-6 text-center font-medium transition-colors ${activeTab === 'medical' ? 'bg-blue-600 text-white' : 'text-blue-800 hover:bg-blue-50'}`}

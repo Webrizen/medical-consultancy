@@ -16,6 +16,7 @@ const WhatsAppIcon = ({ size = 24, color = "#25D366" }) => (
 
 const ContactButtons: React.FC = () => {
   return (
+   <>
     <div className="fixed bottom-6 right-6 z-40 flex flex-col space-y-4">
       <a
         href="https://wa.me/+919876543210"
@@ -28,8 +29,9 @@ const ContactButtons: React.FC = () => {
           WhatsApp Chat
         </div>
       </a>
-      
-      <a
+    </div>
+    <div className="fixed bottom-6 left-6 z-40 flex flex-col space-y-4"> 
+     <a
         href="tel:+919876543210"
         className="group w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 cursor-hover"
       >
@@ -39,6 +41,7 @@ const ContactButtons: React.FC = () => {
         </div>
       </a>
     </div>
+    </>
   );
 };
 

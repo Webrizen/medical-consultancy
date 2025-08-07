@@ -127,7 +127,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
         </p>
 
         {/* Tab Navigation */}
-        <div className="flex border-b border-gray-200 mb-6">
+        <div className="flex border-b border-gray-200 mb-6 overflow-y-auto no-scrollbar">
           {[
             { id: 'medical', label: 'Medical', icon: Stethoscope },
             { id: 'engineering', label: 'Engineering', icon: Cpu },
@@ -137,7 +137,7 @@ const PopupForm: React.FC<PopupFormProps> = ({ isVisible, onClose }) => {
               key={id}
               type="button"
               onClick={() => setActiveTab(id as any)}
-              className={`flex-1 py-2 text-center font-medium text-sm transition-colors flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2 md:px-0 px-4 md:mx-0 mx-1 text-center font-medium text-sm transition-colors flex items-center justify-center gap-2 ${
                 activeTab === id
                   ? 'text-white bg-blue-600 rounded-t-lg'
                   : 'text-blue-800 hover:bg-blue-50'
