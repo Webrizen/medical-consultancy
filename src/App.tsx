@@ -21,10 +21,10 @@ const Home = ({ onPredictorClick }: { onPredictorClick: () => void }) => (
   <>
     <Hero />
     <MostDemandingCourses />
+    <Services />
     <Colleges />
     <TopEngineeringColleges />
-    <TopMBAColleges />
-    <Services />
+    <TopMBAColleges />   
     <Statistics />
     <Testimonials />
     <Predictor onPredictorClick={onPredictorClick} />

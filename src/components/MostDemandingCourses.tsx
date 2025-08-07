@@ -3,9 +3,10 @@ import React from 'react';
 const MostDemandingCourses: React.FC = () => {
   const courses = [
     { name: 'Artificial Intelligence & Machine Learning', logo: '🤖' },
-    { name: 'Data Science & Analytics', logo: '📊' },
-    { name: 'Cybersecurity', logo: '🔒' },
-    { name: 'Cloud Computing', logo: '☁️' },
+    { name: 'CSE Core', logo: '📊' },
+    { name: 'IT', logo: '🔒' },
+    { name: 'Cyber Security', logo: '☁️' },
+    { name: 'EC/EEE', logo: '📈' },
   ];
 
   return (
