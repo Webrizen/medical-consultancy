@@ -2,10 +2,26 @@ import React from 'react';
 
 const Colleges: React.FC = () => {
   const colleges = [
-    { name: 'IQ City Medical College', logo: '🏛️' },
-    { name: 'GDMIS', logo: '🏥' },
-    { name: 'Sanaka Medical College', logo: '🌉' },
-    { name: 'KPC Medical College', logo: '🎓' },
+    { 
+      name: 'IQ City Medical College', 
+      image: 'https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
+      link: 'https://v0-medical-landing-page-alpha.vercel.app'
+    },
+    { 
+      name: 'GDMIS', 
+      image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
+      link: 'https://v0-gimsh-landing-page.vercel.app'
+    },
+    { 
+      name: 'Sanaka Medical College', 
+      image: 'https://images.unsplash.com/photo-1581092921461-39b2f2f8a0f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
+      link: 'https://www.sanakamedicalcollege.org/'
+    },
+    { 
+      name: 'KPC Medical College', 
+      image: 'https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
+      link: 'https://www.kpcmedicalcollege.org/'
+    },
   ];
 
   return (
@@ -33,17 +49,23 @@ const Colleges: React.FC = () => {
               className="animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col items-center text-center border border-blue-100">
-                <div className="text-5xl mb-4" aria-hidden="true">
-                  {college.logo}
+              <a href={college.link} target="_blank" rel="noopener noreferrer" className="block h-full">
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col items-center text-center border border-blue-100 hover:border-blue-200">
+                  <div className="mb-4 w-full h-48 overflow-hidden rounded-lg">
+                    <img 
+                      src={college.image} 
+                      alt={college.name} 
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                    {college.name}
+                  </h3>
+                  <div className="mt-auto pt-4">
+                    <span className="inline-block w-16 h-1 bg-blue-200 rounded-full"></span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                  {college.name}
-                </h3>
-                <div className="mt-auto pt-4">
-                  <span className="inline-block w-16 h-1 bg-blue-200 rounded-full"></span>
-                </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>
