@@ -55,15 +55,17 @@ const Predictor: React.FC<PredictorProps> = ({ onPredictorClick }) => {
                   <div className="text-5xl mb-6">{predictor.icon}</div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">{predictor.title}</h3>
                   <p className="text-gray-600 mb-8 leading-relaxed">{predictor.description}</p>
-                  <button
-                    onClick={onPredictorClick}
+                  <a
+                    href="https://college-predictor-by-just2admit.vercel.app"
+                    target='_blank'
+                    rel="noopener noreferrer"
                     className={`w-full bg-gradient-to-r ${predictor.color} text-white py-4 px-6 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2`}
                   >
                     <span>Predict Now</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

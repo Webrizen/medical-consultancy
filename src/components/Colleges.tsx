@@ -5,12 +5,12 @@ const Colleges: React.FC = () => {
     { 
       name: 'IQ City Medical College', 
       image: 'https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
-      link: 'https://v0-medical-landing-page-alpha.vercel.app'
+      link: 'https://iq-city-medical-college.just2admit.com/'
     },
     { 
       name: 'GDMIS', 
       image: 'https://gimsh.in/wp-content/uploads/2024/05/Student-5.jpeg',
-      link: 'https://v0-gimsh-landing-page.vercel.app'
+      link: 'https://gdims.just2admit.com'
     },
     { 
       name: 'MS Ramaiah Medical College', 
