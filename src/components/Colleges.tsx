@@ -9,18 +9,18 @@ const Colleges: React.FC = () => {
     },
     { 
       name: 'GDMIS', 
-      image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
+      image: 'https://gimsh.in/wp-content/uploads/2024/05/Student-5.jpeg',
       link: 'https://v0-gimsh-landing-page.vercel.app'
     },
     { 
-      name: 'Sanaka Medical College', 
-      image: 'https://images.unsplash.com/photo-1581092921461-39b2f2f8a0f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
-      link: 'https://www.sanakamedicalcollege.org/'
+      name: 'MS Ramaiah Medical College', 
+      image: 'https://www.msrmc.ac.in/uploads/home/banner_images/6694b9421d7ba1721022786.webp',
+      link: 'https://msrit.just2admit.com'
     },
     { 
-      name: 'KPC Medical College', 
-      image: 'https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=300&q=80',
-      link: 'https://www.kpcmedicalcollege.org/'
+      name: 'Kempegowda Institute of Medical Sciences', 
+      image: 'https://www.kimsbangalore.edu.in/wp-content/uploads/2021/08/banner_1.jpg',
+      link: 'https://kempegowda.just2admit.com'
     },
   ];
 
